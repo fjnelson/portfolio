@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="icon" href="./assets/images/me.jpg">
     <link rel="reset" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script
+    src="https://kit.fontawesome.com/2828f7885a.js"
+    integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+    crossorigin="anonymous"
+  ></script>
     <title>Most Awesome'est Portfolio</title>
 </head>
 <body>
     <nav class="navigation-bar">
-        <a href="#about-me">About Me</a>
+        <a href="#story">About Me</a>
         <a href="#applications">Work</a>
-        <a href="#contact-me">Contact Me</a>
+        <a href="#contact">Contact Me</a>
         <a href="https://www.linkedin.com/in/frankjohnnelson/">LinkedIn Resume</a>
         <div class="main-title">
         <a href="https://github.com/fjnelson/portfolio">My Portfolio Sample</a>
@@ -30,6 +37,7 @@
         <div class="center-img">
         <img src="./assets/images/me.jpg" alt="photo of me" />
         </div>
+        <br>
         <p>Now this is a story all about how <br> My life got flipped turned upside down <br>
         And I'd like to take a minute, just sit right there <br>
         I'll tell you how I became the prince of a town called Bel-Air <br> <br>
@@ -75,16 +83,76 @@
   </div>
 </main>
 <footer>
-    <nav>
-    <ul>
-        <h4 div id="contact-me"> Contact me!</h3>
-        <a href="tel:555.555.5555">555.555.5555</a>
-        <a href="mailto:fakeemail@yahoo.com">fakeemail@yahoo.com</a>
-        <a href="https://github.com/fjnelson">Github</a>
-        <a href="https://twitter.com/">Twitter</a>
-        <a href="https://open.spotify.com/">Spotify</a>
-    </ul>
-    </nav>
+ <!-- Contact Me -->
+      <div class="section-light contact mb-5" id="contact">
+        <div class="container">
+          <div
+            class="columns is-multiline"
+            data-aos="fade-in-up"
+            data-aos-easing="linear">
+
+            <div class="column is-12 about-me mt-5">
+              <h1 class="title has-text-centered section-title">
+                Contact Me!
+              </h1>
+            </div>
+            <div class="column is-8 is-offset-2">
+              <form
+                action="https://formspree.io/f/mdovnawa"
+                method="POST">
+
+                <div class="field">
+                  <label class="label">Your Name</label>
+                  <div class="control has-icons-left">
+                    <input
+                      class="input"
+                      type="text"
+                      placeholder="Ex. John Doe"
+                      name="Name"/>
+
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-user"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Your Email</label>
+                  <div class="control has-icons-left">
+                    <input
+                      class="input"
+                      type="email"
+                      placeholder="Ex. yourEmail@gmail.com"
+                      name="Email"
+                    />
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Message for me</label>
+                  <div class="control">
+                    <textarea
+                      class="textarea"
+                      placeholder="Type your message here"
+                      name="Message"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="control ">
+                    <button class="button submit-button has-text-weight-bold">
+                        <i class="fas fa-paper-plane"></i>
+                        &nbsp;&nbsp;Submit&nbsp;&nbsp;
+                      <i class="fas fa-paper-plane"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
 </footer>
 </body>
 </html>
